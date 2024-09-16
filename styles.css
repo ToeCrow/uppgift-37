@@ -1,0 +1,244 @@
+
+body {
+ background-color: #f8f8f8;
+ background-image:url(/images/Gollum\ shadow.jpg);
+ background-blend-mode: overlay;
+ color: #333;
+ font-family: Arial, Helvetica, sans-serif;
+ margin:0;
+ padding:70px 0px 0px 0px;
+}
+
+/* Header */
+header {
+ position: fixed;
+ top: -25px;
+ left: 0;
+ width: 100%;
+ padding: 10px 0;
+ color: #036;
+ background-color: lightgray;
+ text-align: center;
+ z-index: 1;
+} 
+
+h1,
+h2,
+h3,
+p {
+ color: #036;
+ text-align: center;
+} 
+
+/* My precious transition */
+h1 {
+ position: relative;
+ display: inline-block;
+}
+
+.original-text {
+ transition: opacity 0.5s ease;
+}
+
+.hover-text {
+ position: absolute;
+ left: 0;
+ top: 0;
+ opacity: 0;
+ transition: opacity 0.5s ease;
+}
+
+h1:hover .original-text {
+ opacity: 0; 
+}
+
+h1:hover .hover-text {
+ opacity: 1; 
+}
+
+/* Navigation */
+nav {
+ position: sticky;
+ top: 50px;
+ width: 85%;
+ margin: 120px auto 50px auto;
+ z-index: 2;
+}
+
+nav ul {
+ display: flex;
+ justify-content: space-between;
+}
+
+nav li {
+ list-style: none;
+ margin: 0 auto;
+}
+
+a {
+ color: #c30;
+}
+
+nav a {
+ font-weight: 700;
+}
+
+nav a,
+footer a {
+ text-decoration: none;
+ transition: transform 0.3s ease;
+ display: inline-block;
+}
+
+nav a:hover,
+nav a:focus,
+footer a:hover,
+footer a:focus {
+ color: red;
+ transform: scale(1.1);
+}
+
+.current-page {
+ border-bottom: 3px dotted  #c30;
+ margin-bottom: 10px;
+ font-size: 105%;
+}
+
+.current-page:hover {
+ color: #c30;
+}
+
+/* Main */
+#main {
+ width: 95%;
+ background-color: #f8f8f8;
+ margin: 0 auto;
+ padding: 50px 0;
+}
+
+.section-articles {
+ width: 90%;
+ margin: 0 auto 50px auto;
+}
+.section-images{
+ width: 90%;
+ margin: 0 auto 100px auto;
+}
+
+img{
+ width: 100%;
+}
+
+.art-small,
+.art-large,
+.figure-home,
+.customerservice {
+ width: 90%;
+ border: 1px solid #333;
+ margin: 20px auto;
+ padding: 15px;
+ box-shadow: 5px 5px 2px #c30;
+}
+
+/* Kundservice/kontakt*/
+.customerservice {
+ font-size: 2rem;
+ font-weight: 900;
+ color: #c30;
+ margin: 200px auto;
+}
+
+/* Footer */
+footer{
+ position: fixed;
+ bottom: -15px;
+ width: 100%;
+ background-color: lightgray;
+}
+
+ /* Add article form */
+#form-add {
+ width: 90%;
+ margin: 50px auto 150px auto;
+ padding: 10px;
+}
+
+#article-form {
+ border: 1px solid #036;
+ width: 85%;
+ margin: auto;
+ padding: 50px;
+}
+
+/* Media från 481-1024px */
+@media(min-width:481px) and (max-width:1024px){
+
+body {
+ font-size: 130%;
+}
+
+nav {
+ top: 70px;
+ width: 80%;
+ max-width: 570px;
+}
+}
+
+/* Media från 1025px */
+@media (min-width:1025px){
+
+ body {
+  font-size: 150%;
+ }
+
+ nav {
+  top: 80px;
+  width: 65%;
+  max-width: 600px;
+ }
+
+ /* Fler kolumner för små artiklar och bilder i main */
+ #main {
+  width: 90%;
+  max-width: 1565px;
+ }
+
+ .section-articles,
+ .section-images {
+  width: 90%;
+  margin: 0 auto 50px auto;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  
+ }
+ .section-articles{
+  max-width: 1250px;
+ }
+ .section-images{
+  margin-bottom: 175px;
+  max-width: 1500px;
+ }
+
+ .art-large,
+ .customerservice {
+  max-width: 1250px;
+  padding: 25px;
+ }
+ 
+ .art-small {
+  width: 40%;
+  max-width: 500px;
+ }
+
+ /* Cutie Transition */
+ .figure-home {
+  max-width: 400px;
+  margin: 20px 2%;
+  padding: 5px;
+  transition: transform 0.3s ease;
+ }
+ .figure-home:hover {
+  transform: scale(1.2);
+ }
+}

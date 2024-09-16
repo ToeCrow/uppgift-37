@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My responsive</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images/one-ring-lord-of-the-rings-2791803410.png" type="image/png">
+
+</head>
+<body>
+
+ <!-- Header med dold text -->
+ <header>
+  <h1><span class="original-text">My responsive</span><span class="hover-text">My precious</span></h1>
+</header>
+
+<!-- Nav är för sig själv för att kunna visa upp position STICKY -->
+ <nav>
+  <ul>
+   <li><a href="index.html" class="current-page">Start</a></li>
+   <li><a href="about.html">Om projektet</a></li>
+   <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+ </nav>
+ 
+ <main id="main">
+
+  <!-- Artiklar i denna sectionen. Artiklar med max 75 ord blir -small, annars -large -->
+  <h2>Artiklar</h2>
+  <section class="section-articles">
+   
+   <article class="art-small">
+    <h3>Lorem 50</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat sunt ipsum eveniet non error corporis nulla consectetur illum necessitatibus, maiores, minus sapiente sed temporibus fugiat, nihil delectus laudantium vero! Id nostrum cupiditate dolores facilis expedita, a repudiandae accusantium rerum temporibus, in exercitationem accusamus dolor aspernatur vitae culpa omnis quae.</p>
+   </article>
+   <article class="art-small">
+    <h3>Lorem 60</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tenetur maiores autem harum ipsam, quos officia sint eos ea cum quidem ipsum assumenda quisquam labore temporibus obcaecati asperiores itaque optio aspernatur id rerum. Delectus amet, quam, atque quae minus est commodi quas laborum maiores, architecto error sunt corporis doloribus accusantium inventore saepe repudiandae modi illum ad exercitationem dolorum cum eos!</p>
+   </article>
+   <article class="art-large">
+    <h3>Lorem 150</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in, animi amet error libero delectus sed dignissimos pariatur consequuntur qui debitis porro dolorem impedit quasi? Officia eius vitae dolorem enim nulla ratione dolor. Quia quo iusto cupiditate molestiae modi architecto porro rem placeat. Facere, quaerat. Officia consequuntur et, consequatur tempore quisquam repudiandae alias cupiditate, minima sunt deserunt tenetur laboriosam vitae, adipisci modi nulla rerum. Hic consectetur tenetur est dolorem quidem voluptates perspiciatis, exercitationem quasi soluta totam iste nemo, maiores sit similique repellat magni suscipit enim autem. Numquam temporibus reiciendis aspernatur fugit? Suscipit nulla placeat amet laborum atque minus quaerat! Corporis, aspernatur eveniet deleniti nobis ex aut. Dignissimos obcaecati, cupiditate nesciunt deleniti sed, beatae nobis minus dolor perspiciatis corporis itaque recusandae, magni animi tempora? Impedit rem beatae consectetur suscipit neque nam blanditiis itaque qui, provident quisquam sit placeat esse. Perferendis voluptatibus atque quaerat animi tempore culpa cum ipsum enim blanditiis sequi.</p>
+   </article>
+  </section>
+  <h2>Bilder</h2>
+  <section class="section-images">
+   
+   <!-- Någon har lite valpsjukan i denna bildgallerian -->
+   <figure class="figure-home">
+    <h3>Cutie 1</h3>
+    <img src="/images/adorable-cute-funny-dog-puppy-animated-gif-5-696670074.gif" alt="En gif där en gullig hund blinkar till dig">
+   </figure>
+   <figure class="figure-home">
+    <h3>Cutie 2
+    </h3>
+    <img src="/images/tenor-651290342.gif" alt="En gif där en gullig hund tittar på dig">
+   </figure>
+   <figure class="figure-home">
+    <h3>Cutie 3</h3>
+    <img src="/images/cute-puppy-dogs-43117550-736-736-598005414.jpg" alt="En gullig hund som ligger ner och tittar på dig">
+   </figure>
+  </section>
+
+  <!-- Form to add new articles -->
+   <!-- Gjorde denna med ChatGPT för att kolla mitt koncept med art-small och large,
+    kan INTE förklara varken kod i denna form eller script.js -->
+  <section id="form-add">
+   <h2>Lägg till en ny artikel</h2>
+   <form id="article-form">
+       <label for="title">Titel:</label>
+       <input type="text" id="title" name="title" required><br><br>
+       
+       <label for="content">Innehåll:</label><br>
+       <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+
+       <p style="font-size: 2rem; font-weight: 700;" font-size:2rem>Gjorde denna med ChatGPT för att kolla mitt koncept med art-small och -large,
+        kan INTE förklara varken kod i denna form eller script.js.</p>
+       
+       <button type="submit">Lägg till artikel</button>
+   </form>
+
+
+  </section>
+ </main>
+
+ <!-- Footer med länk som skapar mail till mig och copyrights 2024 -->
+ <footer>
+  <p>&copy; 2024 <a href="mailto:thomas.kronvold@chasacademy.se">Thomas Kronvold</a>. All rights reserved. </p>
+ </footer>
+
+ <!-- Hör till formen över och är inte skapad av mig, förstår på ett ungefär vad som händer. HUR SPARAR MAN SÅ KODEN BLIR KVAR??? -->
+ <script src="script.js"></script>
+</body>
+</html>
+
