@@ -207,9 +207,6 @@ nav {
  .section-images {
   width: 90%;
   margin: 0 auto 50px auto;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
   
  }
  .section-articles{
@@ -231,13 +228,14 @@ nav {
   max-width: 500px;
  }
 
- /* Cutie Transition */
  .figure-home {
   max-width: 400px;
   margin: 20px 2%;
   padding: 5px;
   transition: transform 0.3s ease;
  }
+
+  /* Cutie Transition */
  .figure-home:hover {
   transform: scale(1.2);
  }
